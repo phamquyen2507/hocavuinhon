@@ -1,0 +1,108 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:1000px;
+    height:560px;
+}
+.aquarium{
+    width:1000px;
+    height:600px;
+    margin:40px 40px 40px;
+    position: relative;
+}
+.bg{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width:1000px;
+}
+.fish{
+    position: absolute;
+    z-index: 10;
+}
+.fish-1{
+    left:90px; top:100px;
+    position: absolute;
+    animation-name: goldfish;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.fish-2{
+    left:200px; top:300px;
+    position: absolute;
+    animation-name: shark;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.fish-3{
+    left:50px; top:60px;
+    position: absolute;
+    animation-name: turtle;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+.fish-4{
+    left:30px; top:400px;
+    position: absolute;
+    animation-name: faintSchool;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes goldfish{
+    0%   {left:100px; top:400px;}
+    20%  {left:300px; top:400px;}
+    40%  {left:500px; top:300px;}
+    50%  {left:700px; top:50px;}
+    60%  {left:700px; top:100px;}
+    80%  {left:500px; top:200px;}
+    100% {left:100px; top:400px; transform:scaleX(-1);}
+}
+
+@keyframes shark{
+    0%   {left:50px; top:100px;}
+    20%  {left:200px; top:300px;}
+    40%  {left:400px; top:400px;}
+    50%  {left:500px; top:400px;}
+    60%  {left:500px; top:300px;}
+    80%  {left:400px; top:260px;}
+    100% {left:50px; top:100px; transform:scaleX(-1);}
+}
+@keyframes turtle{
+    0%   {left:30px; top:50px;}
+    20%  {left:100px; top:200px;}
+    40%  {left:350px; top:400px;}
+    50%  {left:450px; top:500px;}
+    60%  {left:400px; top:350px;}
+    80%  {left:60px; top:80px;}
+    100% {left:30px; top:50px; transform:scaleX(-1);}
+}
+@keyframes faintSchool{
+    0%   {left:100px; top:400px;}
+    20%  {left:300px; top:400px;}
+    40%  {left:500px; top:300px;}
+    50%  {left:700px; top:50px;}
+    60%  {left:700px; top:100px;}
+    80%  {left:500px; top:200px;}
+    100% {left:100px; top:400px; transform:scaleX(-1);}
+}
+
